@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "writer-extension",
+    "version": "0.1",
+  
+    "description": "Adds a browser action icon to the toolbar. Click the Buttin to see a secret text",
+    "homepage_url": "https://github.com/baulusdev/writer-extension",
+    "icons": {
+      "48": "icons/pfp.png"
+    },
+    
+    "permissions": [
+        "tabs","menus","cookies","theme"
+    ],
+
+    "browser_action": {
+      "default_icon": "icons/pfp.png",
+      "default_title": "writer-extension",
+      "default_popup": "popup/popup.html"
+    }
+  }
+  
