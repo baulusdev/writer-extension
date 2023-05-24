@@ -6,17 +6,21 @@
     "description": "Adds a browser action icon to the toolbar. Click the Buttin to see a secret text",
     "homepage_url": "https://github.com/baulusdev/writer-extension",
     "icons": {
-      "48": "icons/pfp.png"
+      "48": "assets/icons/48x48_firepen-icon.png"
     },
     
     "permissions": [
-        "tabs","menus","cookies","theme"
+        "tabs","menus","cookies","theme","storage","devtools","contextMenus"
     ],
 
     "browser_action": {
       "default_icon": "icons/pfp.png",
       "default_title": "writer-extension",
       "default_popup": "popup/popup.html"
+    },
+
+    "background": {
+      "scripts": ["background/background.js"]
     }
   }
   

@@ -1,4 +1,109 @@
-<center>
-    <p>Welcome to the super dope writer extension</p>
-    <a href="writer/index.html" target="_blank"><button>Open the Full-view writer</button></a>
-</center>
+<!DOCTYPE html>
+<head>
+    <script src="popup.js"></script>
+
+    <style>
+
+        @font-face {
+            font-family: sf-pro-text-regular;
+            src: url(../assets/font/SF-Pro-Text-Regular.otf);
+        }
+        
+        body {
+            background-color: #fbfbfe;
+        }
+
+        @font-face {
+            font-family: sf-pro-text-semibold;
+            src: url(../assets/font/SF-Pro-Text-Semibold.otf);
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(59, 59, 59);
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            cursor: default;
+        }
+
+        #button {
+
+            border-radius: 4px;
+            background-color: #0060DF;
+            padding-block: 4px;
+            padding-inline: 16px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #button:hover {
+            background-color: #024296;
+        }
+
+        #button p {
+
+            font-family: sf-pro-text-semibold;
+            size: 13px;
+            line-height: 18.2px;
+            color: #fbfbfe; 
+            margin: 2px;
+            user-select: none;
+            -moz-user-select: none;
+        }
+
+        #button-holder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5vw
+        }   
+
+        footer div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <p>Welcome to the writer extension</p>
+        </div>
+    </header>
+    <hr>
+    <div id="button-holder">
+            <div id="button" onclick="openeditor()">
+                <p>Open the Editor</p>
+            </div>
+            <div id="button">
+                <p>Close the Editor</p>
+            </div>
+    </div>
+    <footer>
+        <div>
+            <a href="https://github.com/baulusdev/"><p>by baulusdev</p></a>
+        </div>
+    </footer>
+</body>
